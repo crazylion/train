@@ -18,9 +18,9 @@ test:
   pool: 5
   timeout: 5000
 
-development:
+production:
   adapter: postgresql
   encoding: unicode
-  database: train_development
+  database: train
   pool: 5
   password:
