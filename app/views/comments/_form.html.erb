@@ -1,0 +1,6 @@
+<%= form_for [@post, @post.comments.build], :html => {:class => 'form-inline'} do |f| %>
+  <%= f.text_field :commenter, :placeholder => 'who', :class => 'input-small' %>
+  <strong>says:</strong>
+  <%= f.text_field :content, :placeholder => 'what' %>
+  <%= f.submit %>
+<% end %>

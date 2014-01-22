@@ -1,0 +1,8 @@
+<p>
+  <%= comment.commenter %>
+  <strong>says:</strong>
+  <%= comment.content %>
+  <%= link_to '[ Delete ]', [comment.post, comment], 
+               method: :delete,
+               data: { confirm: 'Delete it ?' } %>
+</p>
