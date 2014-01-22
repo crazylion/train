@@ -53,6 +53,8 @@ end
 # for Heroku
 gem 'rails_12factor', group: :production
 
+gem 'devise'
+
 gem 'therubyracer'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'

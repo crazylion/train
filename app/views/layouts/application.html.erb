@@ -52,14 +52,20 @@
     </div>
 
     <div class="container">
-        <div class="row">
-          <div class="span12">
 
-            <%= bootstrap_flash %>
-            <%= yield %>
+      <!---
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      -->
 
-          </div>
-        </div><!--/row-->
+      <div class="row">
+        <div class="span12">
+
+          <%= bootstrap_flash %>
+          <%= yield %>
+
+        </div>
+      </div><!--/row-->
 
       <footer>
         <p>zx1986 &copy; Larvata 2014</p>

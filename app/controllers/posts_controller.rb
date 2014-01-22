@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   # http_basic_authenticate_with name: "larvata", password: "larvata", except: [:index, :show]
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!, :except => [:show, :index]
 
   # GET /posts
   # GET /posts.json
