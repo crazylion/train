@@ -55,6 +55,10 @@ gem 'rails_12factor', group: :production
 
 gem 'devise'
 gem 'will_paginate'
+gem 'haml'
+gem 'cancan'
+gem 'resque'
+gem 'delayed_job'
 
 gem 'therubyracer'
 gem 'less-rails'
