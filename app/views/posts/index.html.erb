@@ -16,6 +16,7 @@
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:content) %></th>
+      <th>Comments Counter</th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -26,6 +27,7 @@
         <td><%= link_to post.id, post_path(post) %></td>
         <td><%= post.title %></td>
         <td><%= post.content %></td>
+        <td><%= post.comments_count %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_post_path(post), :class => 'btn btn-mini' %>
