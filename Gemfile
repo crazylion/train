@@ -54,6 +54,7 @@ end
 gem 'rails_12factor', group: :production
 
 gem 'devise'
+gem 'will_paginate'
 
 gem 'therubyracer'
 gem 'less-rails'
